@@ -4,13 +4,38 @@ MLX inference server with [TurboQuant](https://github.com/noahsaso/turboquant-ml
 
 Default model: `mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit`
 
-## Quick start
+## Setup
+
+```bash
+git clone --recurse-submodules git@github.com:noahsaso/my-llm.git
+cd my-llm
+```
+
+If you already cloned without `--recurse-submodules`:
+
+```bash
+git submodule update --init --recursive
+```
+
+Download the default model:
+
+```bash
+huggingface-cli download mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit
+```
+
+Install dependencies:
+
+```bash
+uv sync
+```
+
+## Usage
 
 ```bash
 uv run my-llm
 ```
 
-## Options
+With custom options:
 
 ```bash
 uv run my-llm \
@@ -19,6 +44,8 @@ uv run my-llm \
   --fp16-layers 0 \
   --port 8080
 ```
+
+## Options
 
 | Flag | Default | Description |
 |------|---------|-------------|
