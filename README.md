@@ -61,7 +61,7 @@ uv run my-llm \
 | `--host` | 127.0.0.1 | |
 | `--port` | 8080 | |
 | `--max-tokens` | 4096 | Max generation tokens |
-| `--temp` | 0.0 | |
+| `--temp` | 0.7 | |
 
 ## [Pi](https://shittycodingagent.ai/) coding agent
 

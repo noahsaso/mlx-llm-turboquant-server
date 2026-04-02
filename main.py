@@ -202,7 +202,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
 
     # ── Generation defaults ──────────────────────────────────────
-    p.add_argument("--temp", type=float, default=0.0)
+    p.add_argument("--temp", type=float, default=0.7)
     p.add_argument("--top-p", type=float, default=1.0)
     p.add_argument("--top-k", type=int, default=0)
     p.add_argument("--min-p", type=float, default=0.0)
