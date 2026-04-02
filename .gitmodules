@@ -1,0 +1,3 @@
+[submodule "vendor/turboquant-mlx"]
+	path = vendor/turboquant-mlx
+	url = https://github.com/noahsaso/turboquant-mlx.git
