@@ -2,7 +2,7 @@
 
 MLX inference server with [TurboQuant](https://github.com/noahsaso/turboquant-mlx) KV cache compression. Exposes an OpenAI-compatible API.
 
-Default model: `mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit`
+Default model: [`mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit`](https://huggingface.co/mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit)
 
 ## Setup
 
