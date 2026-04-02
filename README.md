@@ -6,6 +6,10 @@ Default model: `mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit`
 
 ## Setup
 
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and the [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli).
+
+Clone with submodules:
+
 ```bash
 git clone --recurse-submodules git@github.com:noahsaso/my-llm.git
 cd my-llm
@@ -20,7 +24,7 @@ git submodule update --init --recursive
 Download the default model:
 
 ```bash
-huggingface-cli download mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit
+hf download mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit
 ```
 
 Install dependencies:
