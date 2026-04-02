@@ -63,7 +63,7 @@ uv run my-llm \
 | `--max-tokens` | 4096 | Max generation tokens |
 | `--temp` | 0.0 | |
 
-## Pi coding agent
+## [Pi](https://shittycodingagent.ai/) coding agent
 
 Add the following to `~/.pi/agent/models.json`:
 
