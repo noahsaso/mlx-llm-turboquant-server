@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-my-llm
+mlx-llm-turboquant-server
 
 MLX inference server with:
   • TurboQuant 3-bit KV cache compression  (arozanov/turboquant-mlx)
@@ -11,10 +11,10 @@ Exposes an OpenAI-compatible API (same as mlx_lm.server).
 
 ────────────────────────────────────────────────────────────────────
 Quick start:
-  uv run my-llm
+  uv run mlx-llm-turboquant-server
 
 With explicit model + draft model + tuning:
-  uv run my-llm \
+  uv run mlx-llm-turboquant-server \
     --model mlx-community/Qwen2.5-32B-Instruct-4bit \
     --draft-model mlx-community/Qwen2.5-1.5B-Instruct-4bit \
     --num-draft-tokens 4 \

@@ -1,5 +1,5 @@
 [project]
-name = "my-llm"
+name = "mlx-llm-turboquant-server"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
-my-llm = "main:main"
+mlx-llm-turboquant-server = "main:main"
 
 [build-system]
 requires = ["hatchling"]

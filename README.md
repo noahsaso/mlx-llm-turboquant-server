@@ -1,4 +1,4 @@
-# my-llm
+# mlx-llm-turboquant-server
 
 MLX inference server with [TurboQuant](https://github.com/noahsaso/turboquant-mlx) KV cache compression. Exposes an OpenAI-compatible API.
 
@@ -11,8 +11,8 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and the [H
 Clone with submodules:
 
 ```bash
-git clone --recurse-submodules git@github.com:noahsaso/my-llm.git
-cd my-llm
+git clone --recurse-submodules git@github.com:noahsaso/mlx-llm-turboquant-server.git
+cd mlx-llm-turboquant-server
 ```
 
 If you already cloned without `--recurse-submodules`:
@@ -36,13 +36,13 @@ uv sync
 ## Usage
 
 ```bash
-uv run my-llm
+uv run mlx-llm-turboquant-server
 ```
 
 With custom options:
 
 ```bash
-uv run my-llm \
+uv run mlx-llm-turboquant-server \
   --model mlx-community/Qwen2.5-32B-Instruct-4bit \
   --turboquant-bits 3 \
   --fp16-layers 0 \
@@ -70,7 +70,7 @@ Add the following to `~/.pi/agent/models.json`:
 ```json
 {
   "providers": {
-    "my-llm": {
+    "mlx-llm-turboquant-server": {
       "baseUrl": "http://localhost:8080/v1",
       "apiKey": "unused",
       "models": [
@@ -91,7 +91,7 @@ Add the following to `~/.pi/agent/models.json`:
 Then start the server and select the model in Pi:
 
 ```bash
-uv run my-llm
+uv run mlx-llm-turboquant-server
 pi
 ```
 
