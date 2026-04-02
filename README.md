@@ -63,6 +63,38 @@ uv run my-llm \
 | `--max-tokens` | 4096 | Max generation tokens |
 | `--temp` | 0.0 | |
 
+## Pi coding agent
+
+Add the following to `~/.pi/agent/models.json`:
+
+```json
+{
+  "providers": {
+    "my-llm": {
+      "baseUrl": "http://localhost:8080/v1",
+      "apiKey": "unused",
+      "models": [
+        {
+          "id": "mlx-community/Qwen3.5-27B-Claude-4.6-Opus-Distilled-MLX-4bit",
+          "name": "Local Qwen 3.5 (Opus 4.6 Distilled)",
+          "api": "openai-completions",
+          "contextWindow": 128000,
+          "maxTokens": 4096,
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 }
+        }
+      ]
+    }
+  }
+}
+```
+
+Then start the server and select the model in Pi:
+
+```bash
+uv run my-llm
+pi
+```
+
 ## Test
 
 ```bash
